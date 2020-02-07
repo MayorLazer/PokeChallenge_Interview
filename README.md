@@ -1,4 +1,4 @@
-# Instrucctions
+# instructions
 
 * Install node.js
 * Download this repo with.... git clone https://github.com/MayorLazer/PokeChallenge_Interview.git
@@ -6,6 +6,21 @@
 * npm i (wait untill all dependencies are installed)
 * npm start
 * go to <http://localhost:3000> (have fun catching pokemons!)
+
+# Takeaway
+
+I've done almost every task asked in the sheet. 
+* Expect for the flow/typescript notations (I've commented the code tho) 
+* The optionals ones (unit tests, and redux i didn't consider them neccesary for the task given) 
+
+I would've loved talking with the "fictional client" to have a greater understanding of their pokeneeds to improve the overall app...
+
+But with the timeframe and specifications given. I believe their'll be more than happy with the final product
+
+Any feedback from their is more than welcome tho....
+
+Best regards! 
+
 
 ___________
 
