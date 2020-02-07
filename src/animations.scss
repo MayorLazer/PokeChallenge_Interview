@@ -1,0 +1,27 @@
+.poke_grid {
+    &-appear {
+        opacity: 0.01;
+        transform: skew(5deg, 5deg) translateY(-10px);
+        &-active {
+            opacity: 1;
+            transform: skew(0deg,0deg) translateY(0px);
+            transition: opacity 1000ms ease-in;
+            transition: transform 500ms ease-out;
+        }
+    }
+    &-enter {
+        opacity: 0.01;
+        &-active {
+            opacity: 1;
+            transition: opacity 1000ms ease-in;
+        }
+    }
+    &-leave {
+        opacity: 1;
+        &-active {
+            opacity: 0.01;
+            transition: opacity 1000ms ease-out;
+        }
+    }
+    
+}
