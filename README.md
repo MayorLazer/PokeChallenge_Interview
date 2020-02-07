@@ -1,3 +1,14 @@
+# Instrucctions
+
+* Install node.js
+* Download this repo with.... git clone https://github.com/MayorLazer/PokeChallenge_Interview.git
+* cd PokeChallenge_Interview
+* npm i (wait untill all dependencies are installed)
+* npm start
+* go to <http://localhost:3000> (have fun catching pokemons!)
+
+___________
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

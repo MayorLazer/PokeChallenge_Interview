@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PokeList from './PokeList'
 import PokeCard from './PokeCard'
+import {CSSTransitionGroup} from 'react-transition-group'
 import '../App.scss'
 
 const API = 'https://api.pokemontcg.io/v1';
@@ -89,7 +90,18 @@ export default class PokeListContainer extends Component {
             <section style={{width:'100%', padding:'2rem 5rem' }}>
                 <h2>Your poke team</h2>
                 <aside style={{backgroundColor: "yellow", marginBottom: "2rem", padding: "2rem"}} className={"PokeGrid"}>
-                    {selectedPokemons.map( (item, key) => <PokeCard key={key} profile={item}/>)}
+                    {selectedPokemons.map( (item, key) => 
+                        <CSSTransitionGroup
+                        transitionName="poke_grid"
+                        transitionEnterTimeout={1000}
+                        transitionLeaveTimeout={1000}
+                        transitionAppear={true}
+                        transitionAppearTimeout={1000}
+                        key={key+'key'}
+                        >
+                            <PokeCard key={key} profile={item}/>
+                        </CSSTransitionGroup>
+                    )}
                 </aside>
                 <PokeList pokelist={pokemons} selectPoke={this._selectPokemon.bind(this)}/>           
                 {isFetching? <p>Discovering new pokemons...</p>: ''}
