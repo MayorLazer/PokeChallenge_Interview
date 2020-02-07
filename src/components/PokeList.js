@@ -10,11 +10,13 @@ export default function PokeList(props) {
             {props.pokelist.map( (item,key) =>
                 <CSSTransitionGroup
                     transitionName="poke_grid"
+                    transitionEnterTimeout={1000}
+                    transitionLeaveTimeout={1000}
                     transitionAppear={true}
                     transitionAppearTimeout={1000}
                     key={key+'key'}
                 >
-                    <li key={key}>
+                    <li key={key} onClick={ () => props.selectPoke(item)}>
                         <PokeCard profile={item} />
                     </li>
                 </CSSTransitionGroup>
